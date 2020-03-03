@@ -12,8 +12,15 @@
     <!--Link to homemade CSS-->
     <link rel="stylesheet" href="Education_Money.css">
 
+    <!--JS scripts for dropdown menu-->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
     <!--Link to Bootstrap CSS-->
     <link rel = 'stylesheet' href = 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity = 'sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin = 'anonymous'>
+
 </header>
 <body>
     <nav class = 'navbar navbar-expand-lg navbar-light bg-light p-3 mb-2'>
@@ -21,23 +28,24 @@
         <button class = 'btn btn-outline-primary navbar-toggler' type = 'button' data-toggle = 'collapse' data-target = '#navbarNavDropdown' aria-controls = 'navbarNavDropdown' aria-expanded = 'false' aria-label = 'Toggle navigation'>
           <span class = 'navbar-toggler-icon'></span>
         </button>
-        <div class = 'collapse navbar-collapse' id = 'navbarNavDropdown' menu-left>        
+
+        <div class = 'btn-group dropdown collapse navbar-collapse ' id = 'navbarNavDropdown' menu-left>        
           <ul class = 'navbar-nav ml-auto'>
             <li class = 'nav-item dropdown'>
-              <div class="dropdown">
-                <strong><a class = 'nav-link dropdown-toggle' href = '#' id = 'navbarDropdownMenuLink' type = 'button' data-toggle = 'dropdown' aria-haspopup = 'true' aria-expanded = 'false'>
-                  Plots
-                </a></strong>
-                <div class = 'dropdown-menu' aria-labelledby = 'dropdownMenuLink'>
-                      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">            
 
-                  <li><a class = 'dropdown-item' href = 'School_Budget.html'>School Budgets</a></li>
-                  <li><a class = 'dropdown-item' href = 'student_budget.html'>Budget per Student</a></li>
-                  <li><a class = 'dropdown-item' href = 'Math_Scores.html'>Average Math Scores</a></li>
-                  <li><a class = 'dropdown-item' href = 'Reading_Scores.html'>Average Reading Scores</a></li>
-                  </ul>
+                <strong><a class = 'nav-link dropdown-toggle' href = '#' id = 'navbarDropdownMenuLink' type = 'btn=group dropdown' data-target = '#navbarNavDropdown' 
+                data-toggle = 'dropdown' aria-haspopup = 'true' aria-expanded = 'false'>
+                  Plots <span class="sr-only">Toggle Dropdown</span>
+                </a></strong>
+
+
+                <div class = 'dropdown-menu' aria-labelledby = 'dropdownMenu'>
+                  <a class = 'dropdown-item' href = 'school_budget.html'>School Budget</a>
+                  <a class = 'dropdown-item' href = 'student_budget.html'>Student Budget</a>
+                  <a class = 'dropdown-item' href = 'math_scores.html'>Math Scores</a>
+                  <a class = 'dropdown-item' href = 'reading_scores.html'>Reading Scores</a>
                 </div>
-            </li>
+                </div>
             <li class = 'nav-item'>
               <strong><a class = 'nav-link' href = '#'>Comparison</a></strong>
             </li>
@@ -74,10 +82,10 @@
     <div class = 'row'>
       <div class = 'col-md-10'>
         <img src = '../assets/School_Budget_Passing.png' Align = 'left' alt = 'School Budgets'/>
-        <p><font size="5">
+        <p><font size="6">
           The purpose of this project was to analyze a city's district-wide standardized test results to aid the school board and mayor in making strategic decisions regarding future school budgets and priorities.  The data covers both District and Charter schools in the city.</font>
         </p>
-        <p><font size="5">
+        <p><font size="6">
             We will use Matplotlib to compare the city's fifteen high schools' budgets to their students' standardized test scores in math and reading.  This site provides visualizations along with explanations of the trends and correlations.</font>   
         </p>
       </div>
@@ -93,12 +101,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!--Fourth Row-->
-    <div class = 'row'>
-      <div class = 'col-md-10'></div>
-      
     </div>
   </div>
 

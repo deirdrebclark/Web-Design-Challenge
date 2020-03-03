@@ -12,25 +12,37 @@
     <!--Link to homemade CSS-->
     <link rel="stylesheet" href="Education_Money.css">
 
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
     <!--Link to Bootstrap CSS-->
     <link rel = 'stylesheet' href = 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity = 'sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin = 'anonymous'>
 </header>
+
 <body>
     <nav class = 'navbar navbar-expand-lg navbar-light bg-light p-3 mb-2'>
-        <strong><a class = 'font-weight-bolder bg-info text-white navbar-brand nav-link' href = '#'>Education Money<span class = 'sr-only'>(current)</span></a></strong>
+        <strong><a class = 'font-weight-bolder bg-info text-white navbar-brand nav-link' href = 'index.html'>Education Money<span class = 'sr-only'>(current)</span></a></strong>
         <button class = 'btn btn-outline-primary navbar-toggler' type = 'button' data-toggle = 'collapse' data-target = '#navbarNavDropdown' aria-controls = 'navbarNavDropdown' aria-expanded = 'false' aria-label = 'Toggle navigation'>
           <span class = 'navbar-toggler-icon'></span>
         </button>
-        <div class = 'collapse navbar-collapse' id = 'navbarNavDropdown' menu-left>        
+        <div class = 'btn-group dropdown collapse navbar-collapse ' id = 'navbarNavDropdown' menu-left>        
           <ul class = 'navbar-nav ml-auto'>
             <li class = 'nav-item dropdown'>
-                <strong><a class = 'nav-link dropdown-toggle' href = '#' id = 'navbarDropdownMenuLink' role = 'button' data-toggle = 'dropdown' aria-haspopup = 'true' aria-expanded = 'false'>
-                  Plots
+
+                <strong><a class = 'nav-link dropdown-toggle' href = '#' id = 'navbarDropdownMenuLink' type = 'btn=group dropdown' data-target = '#navbarNavDropdown' 
+                data-toggle = 'dropdown' aria-haspopup = 'true' aria-expanded = 'false'>
+                  Plots <span class="sr-only">Toggle Dropdown</span>
                 </a></strong>
-                <div class = 'dropdown-menu' aria-labelledby = 'navbarDropdownMenuLink'>
-                  <a class = 'dropdown-item' href = '#'>Action</a>
-                  <a class = 'dropdown-item' href = '#'>Another action</a>
-                  <a class = 'dropdown-item' href = '#'>Something else here</a>
+
+
+                <div class = 'dropdown-menu' aria-labelledby = 'dropdownMenu'>
+                  <a class = 'dropdown-item' href = 'school_budget.html'>School Budget</a>
+                  <a class = 'dropdown-item' href = 'student_budget.html'>Student Budget</a>
+                  <a class = 'dropdown-item' href = 'math_scores.html'>Math Scores</a>
+                  <a class = 'dropdown-item' href = 'reading_scores.html'>Reading Scores</a>
+                </div>
                 </div>
             </li>
             <li class = 'nav-item'>
@@ -70,7 +82,7 @@
       <div class = 'col-md-10'>
         <img src = '../assets/School_Budget_Passing.png' alt = 'School Budgets' width = '950' height = absolute/>
         <p></p>
-        <p><font size="5">
+        <p><font size="6">
             According to the bar chart above, the increase in school budget is not proportionate to the overall passing rate in the school.  This analysis shows that District schools that have higher budgets are not as successful in their overall passing rate as Charter schools with lesser budgets.</font>   
         </p>
       </div>

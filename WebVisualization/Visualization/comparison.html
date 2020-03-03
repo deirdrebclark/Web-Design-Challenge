@@ -11,7 +11,7 @@
 
     <!--Link to homemade CSS-->
     <link rel="stylesheet" href="Education_Money.css">
-    
+
     <!--JS scripts for dropdown menu-->
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
@@ -20,13 +20,15 @@
 
     <!--Link to Bootstrap CSS-->
     <link rel = 'stylesheet' href = 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity = 'sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin = 'anonymous'>
+
 </header>
 <body>
     <nav class = 'navbar navbar-expand-lg navbar-light bg-light p-3 mb-2'>
-        <strong><a class = 'font-weight-bolder bg-info text-white navbar-brand nav-link' href = 'index.html'>Education Money<span class = 'sr-only'>(current)</span></a></strong>
+        <strong><a class = 'font-weight-bolder bg-info text-white navbar-brand nav-link' href = '#'>Education Money<span class = 'sr-only'>(current)</span></a></strong>
         <button class = 'btn btn-outline-primary navbar-toggler' type = 'button' data-toggle = 'collapse' data-target = '#navbarNavDropdown' aria-controls = 'navbarNavDropdown' aria-expanded = 'false' aria-label = 'Toggle navigation'>
           <span class = 'navbar-toggler-icon'></span>
         </button>
+
         <div class = 'btn-group dropdown collapse navbar-collapse ' id = 'navbarNavDropdown' menu-left>        
           <ul class = 'navbar-nav ml-auto'>
             <li class = 'nav-item dropdown'>
@@ -44,12 +46,11 @@
                   <a class = 'dropdown-item' href = 'reading_scores.html'>Reading Scores</a>
                 </div>
                 </div>
-            </li>
             <li class = 'nav-item'>
               <strong><a class = 'nav-link' href = '#'>Comparison</a></strong>
             </li>
             <li class = 'nav-item'>
-              <strong><a class = 'nav-link' href = '#'>Data</a></strong>
+              <strong><a class = 'nav-link' href = '../assets/school_data.html'>Data</a></strong>
             </li>
             
           </ul>
@@ -69,37 +70,36 @@
 
     <!--Second Row-->
     <div class = 'row'>
-      <div class = 'col-md-10'>
-        <h1>Average Reading Scores</h1>
-      </div>
-      <div class = 'col-md-2'>
-        <h2>Visualizations</h2>
+      <div class = 'col-md-12'>
+        <h1>Comparison: Budget & Scores</h1>
       </div>
     </div>
 
     <!--Third Row-->
     <div class = 'row'>
-      <div class = 'col-md-10'>
-        <img src = '../assets/Math_v_Type.png' alt = 'School Budgets' width = '950' height = absolute/>
-        <p></p>
+      <div class = 'col-md-12'>
+        <img src = '../assets/School_Budget_Passing.png' Align = 'left' alt = 'School Budgets'/>
         <p><font size="6">
-            Students in Charter schools have higher reading scores on standardized tests.</font>   
-        </p>
-      </div>
-      <div class = 'col-md-1' >
-        <img src = '../assets/School_Budget_Passing.png' Align = 'left' width = '150' height = '150' alt = 'School Budgets'/>
+          Click any plot to get an in-depth analysis.</font>
+        </div>
+       </div>
+    </div>
+
+    <!--Fourth Row-->
+    <div class = 'row'>
         <div class = 'col-md-1'>
-        <img  src = '../assets/Student_Budget_Passing.png' width="150" height="150"alt = 'School Budgets'/>
+        <img src = '../assets/School_Budget_Passing.png' Align = 'left' width="150" height="150"alt = 'School Budgets'/>
+        <div class = 'col-md-1'>
+        <img src = '../assets/Student_Budget_Passing.png' width="150" height="150"alt = 'School Budgets'/>
         </div>
         <div class = 'col-md-1'>
           <img src = '../assets/Math_v_Type.png' Align = 'left' width="150" height="150"alt = 'School Budgets'/>
           <div class = 'col-md-1'>
-          <img class = 'selected' src = '../assets/Reading_v_Type.png' width="150" height="150"alt = 'School Budgets'/>
+          <img src = '../assets/Reading_v_Type.png' width="150" height="150"alt = 'School Budgets'/>
           </div>
         </div>
-      </div>
+      
     </div>
-
   </div>
 
 </body>
